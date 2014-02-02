@@ -26,5 +26,7 @@ AC_TYPE_UINT32_T
 
 AC_CONFIG_FILES([Makefile
 				 src/Makefile
-                 test/Makefile])
+                 test/Makefile
+				 docs/Makefile
+				 docs/PiGL.pc])
 AC_OUTPUT
