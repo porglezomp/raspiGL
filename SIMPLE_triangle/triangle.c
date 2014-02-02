@@ -11,6 +11,8 @@
 #include "EGL/egl.h"
 #include "EGL/eglext.h"
 
+#include "cube_texture_and_coords.h"
+
 #define PATH "./"
 
 #define IMAGE_SIZE 128
@@ -360,10 +362,6 @@ int main ()
    // Setup the model world
    init_model_proj(state);
 
-<<<<<<< HEAD
-   esMainLoop(&esContext);
-}
-=======
    // initialise the OGLES texture(s)
    init_textures(state);
 
@@ -375,4 +373,3 @@ int main ()
    exit_func();
    return 0;
 }
->>>>>>> d52148a86e876246101656f6593007163bc92fa8
