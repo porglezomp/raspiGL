@@ -362,9 +362,6 @@ int main ()
    // Setup the model world
    init_model_proj(state);
 
-   // initialise the OGLES texture(s)
-   init_textures(state);
-
    while (!terminate)
    {
       update_model(state);
