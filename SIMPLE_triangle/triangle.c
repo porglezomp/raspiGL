@@ -1,3 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <assert.h>
+#include <unistd.h>
+
+#include "bcm_host.h"
+
+#include "GLES/gl.h"
+#include "EGL/egl.h"
+#include "EGL/eglext.h"
+
+#include "cube_texture_and_coords.h"
+
+#define PATH "./"
+
+#define IMAGE_SIZE 128
+
+#ifndef M_PI
+   #define M_PI 3.141592654
+#endif
+
 typedef struct
 {
    // Handle to a program object
