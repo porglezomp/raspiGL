@@ -49,7 +49,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef M_PI
    #define M_PI 3.141592654
 #endif
-	
 
 typedef struct
 {
@@ -537,4 +536,3 @@ int main ()
    exit_func();
    return 0;
 }
-
