@@ -11,8 +11,6 @@
 #include "EGL/egl.h"
 #include "EGL/eglext.h"
 
-#include "cube_texture_and_coords.h"
-
 #define PATH "./"
 
 #define IMAGE_SIZE 128
