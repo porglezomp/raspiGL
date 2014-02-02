@@ -10,7 +10,7 @@ extern EGLSurface raspiGL_surface;
 extern EGLContext raspiGL_context;
 
 int OGL_Init();
-const char* OGL_Error();
+const char* OGL_GetError();
 void OGL_Quit();
 void OGL_SwapBuffers();
 

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "automake --add-missing... "
+automake --add-missing
+echo "autoreconf... "
+autoreconf
+echo "running ./configure..."
+./configure
