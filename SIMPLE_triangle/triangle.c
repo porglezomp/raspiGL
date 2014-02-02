@@ -11,8 +11,6 @@
 #include "EGL/egl.h"
 #include "EGL/eglext.h"
 
-#include "cube_texture_and_coords.h"
-
 #define PATH "./"
 
 #define IMAGE_SIZE 128
@@ -165,7 +163,6 @@ static void init_model_proj(CUBE_STATE_T *state)
    glFrustumf(-hwd, hwd, -hht, hht, nearp, farp);
 
    glEnableClientState( GL_VERTEX_ARRAY );
-   glVertexPointer( 3, GL_BYTE, 0, quadx );
 
    reset_model(state);
 }
@@ -204,8 +201,6 @@ static void redraw_scene(CUBE_STATE_T *state)
 {
    // Start with a clear screen
    glClear( GL_COLOR_BUFFER_BIT );
-
-   glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
    eglSwapBuffers(state->display, state->surface);
 }
