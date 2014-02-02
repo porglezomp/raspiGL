@@ -1,5 +1,5 @@
 OBJS=triangle.o
-BIN=SIMPLE_triangle.bin
+BIN=hello_triangle.bin
 
 include ../Makefile.include
 
