@@ -3,8 +3,10 @@
 
 volatile int terminate;
 
+bool x;
 void redraw_scene() {
-	glClearColor(.1, .2, .4, .9);
+	glClearColor(.1, .2, .4, x ?.9 : .93);
+	x = !x;
 	glClear(GL_COLOR_BUFFER_BIT);
 	OGL_SwapBuffers();
 }
