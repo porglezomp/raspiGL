@@ -11,7 +11,7 @@ AC_CONFIG_HEADERS([config.h])
 AC_SUBST([libfilename], [PiGL])
 
 # Checks for programs.
-AC_PROG_CXX
+AC_PROG_CC
 AC_PROG_RANLIB
 AM_PROG_AR
 	

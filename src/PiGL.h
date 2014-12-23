@@ -1,5 +1,8 @@
 #ifndef PIGL_H
 #define PIGL_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "EGL/egl.h"
 
@@ -14,4 +17,7 @@ const char* OGL_GetError();
 void OGL_Quit();
 void OGL_SwapBuffers();
 
+#ifdef __cplusplus
+}
+#endif
 #endif

@@ -7,4 +7,4 @@ Name: PiGL
 Description: A library to help with setting up OpenGL on the raspberry pi.
 Version: @PACKAGE_VERSION@
 Libs: -L/opt/vc/lib -L${libdir} -lPiGL -lGLESv1_CM -lEGL -lbcm_host
-Cflags: -I/opt/vc/include -I${includedir} -I${includedir}/PiGL -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux
+Cflags: -I/opt/vc/include -I${includedir}/PiGL -I${includedir} -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux
