@@ -8,6 +8,8 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects])
 AC_CONFIG_SRCDIR([src/])
 AC_CONFIG_HEADERS([config.h])
 
+AC_SUBST([libfilename], [PiGL])
+
 # Checks for programs.
 AC_PROG_CXX
 AC_PROG_RANLIB
@@ -25,8 +27,8 @@ AC_TYPE_UINT32_T
 # Checks for library functions.
 
 AC_CONFIG_FILES([Makefile
-				 src/Makefile
+                 src/Makefile
                  test/Makefile
-				 docs/Makefile
-				 docs/PiGL.pc])
+                 docs/Makefile
+                 docs/PiGL.pc])
 AC_OUTPUT

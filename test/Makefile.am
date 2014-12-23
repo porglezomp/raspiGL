@@ -1,6 +1,9 @@
-check_PROGRAMS = Test.bin
+AM_CPPFLAGS = -I$(top_builddir)/src
 
-Test_bin_SOURCE = Test.cpp
+LDADD = ../src/lib@libfilename@.a
+
+check_PROGRAMS = Test.exe
+Test_exe_SOURCE = Test.cpp
 
 TESTS = $(check_PROGRAMS)
 
